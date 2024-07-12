@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterinstagram/pages/login_page.dart';
 import 'package:flutterinstagram/pages/my_splash_page.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF1780C2)),
         useMaterial3: true,
       ),
-      home: MySplashPage(),
+      home: LoginPage(),
     );
   }
 }

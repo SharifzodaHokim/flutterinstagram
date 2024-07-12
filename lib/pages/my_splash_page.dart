@@ -66,23 +66,3 @@ class MySplashPage extends StatelessWidget {
     );
   }
 }
-
-class LoginPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Login Page'),
-      ),
-      body: Center(
-        child: GestureDetector(
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => LoginPage()));
-            },
-            child: Text("Splash screen page")),
-        child: Text('This is the Login Page!'),
-      ),
-    );
-  }
-}

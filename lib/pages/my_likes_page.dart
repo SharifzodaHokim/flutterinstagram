@@ -15,6 +15,5 @@ class _MyLikesPageState extends State<MyLikesPage> {
         child: Text("Like  page"),
       ),
     );
-    ;
   }
 }

@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutterinstagram/pages/login_page.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/services.dart';
@@ -74,6 +75,12 @@ class LoginPage extends StatelessWidget {
         title: Text('Login Page'),
       ),
       body: Center(
+        child: GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => LoginPage()));
+            },
+            child: Text("Splash screen page")),
         child: Text('This is the Login Page!'),
       ),
     );

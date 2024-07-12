@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterinstagram/components/navigation_manu.dart';
+import 'package:flutterinstagram/pages/login_page.dart';
 
 class MySplashPage extends StatefulWidget {
   const MySplashPage({super.key});
@@ -16,7 +16,7 @@ class _MySplashPageState extends State<MySplashPage> {
         child: GestureDetector(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => NavigationMenu()));
+                  MaterialPageRoute(builder: (context) => LoginPage()));
             },
             child: Text("Splash screen page")),
       ),
